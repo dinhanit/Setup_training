@@ -1,6 +1,7 @@
 # Setup workflow for training model
+- This is a workflow help you custom model for yourself very easy to learning new model.
 # Change directory
-```bash
+```
     cd cpv/.source
 ```
 # Test training
