@@ -6,7 +6,6 @@ from dataloader import *
 from tqdm import tqdm
 
 
-
 def train_fn(model,data_loader,epochs,criterion,optimizer):
     for epoch in range(epochs):
             loop = tqdm(enumerate(data_loader), total=len(data_loader), leave=True)
@@ -54,6 +53,6 @@ if __name__ =="__main__":
     optimizer = optim.Adam(model.parameters(), lr=float(LR))
     scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5)
     
-    utils_train(model=model,data_loader=TRAINLOADER,epochs=20,criterion=criterion,optimizer=optimizer,out_dir=".model")
+    utils_train(model=model,data_loader=TRAINLOADER,epochs=20,criterion=criterion,optimizer=optimizer,out_dir="../.model")
             
             
